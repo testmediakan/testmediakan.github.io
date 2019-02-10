@@ -199,10 +199,18 @@ jQuery(function($){
     });
 
 
-    $(".cards__card").on('click', function(e){
-        $(e.target).parents(".cards__card").children(".card__front").toggleClass("cards__rotate-front");
-        $(e.target).parents(".cards__card").children(".card__back").toggleClass("cards__rotate-back");
-    });
+    if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+        $(".cards__card").on('click', function(e){
+            $(e.target).parents(".cards__card").children(".card__front").toggleClass("cards__rotate-front");
+            $(e.target).parents(".cards__card").children(".card__back").toggleClass("cards__rotate-back");
+        });
+        console.log('this is a touch device');
+    } else {
+        console.log('this is not a touch device');
+        $(".cards__card").addClass("cards__hover");
+    }
+
+
 /*
     $(".cards__card").on('mouseenter', function(e){
         $(e.target).parents(".cards__card").children(".card__front").addClass("cards__rotate-front");
