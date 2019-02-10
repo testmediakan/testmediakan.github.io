@@ -525,6 +525,7 @@ a.gallery__img8 {
   top: 0;
   transition: 1s;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .card__back {
