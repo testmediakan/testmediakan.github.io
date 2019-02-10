@@ -199,5 +199,21 @@ jQuery(function($){
     });
 
 
+    $(".cards__card").on('click', function(e){
+        $(e.target).parents(".cards__card").children(".card__front").toggleClass("cards__rotate-front");
+        $(e.target).parents(".cards__card").children(".card__back").toggleClass("cards__rotate-back");
+    });
+/*
+    $(".cards__card").on('mouseenter', function(e){
+        $(e.target).parents(".cards__card").children(".card__front").addClass("cards__rotate-front");
+        $(e.target).parents(".cards__card").children(".card__back").addClass("cards__rotate-back");
+    });
+
+    $(".cards__card").on('mouseleave', function(e){
+        $(e.target).parents(".cards__card").children(".card__front").removeClass("cards__rotate-front");
+        $(e.target).parents(".cards__card").children(".card__back").removeClass("cards__rotate-back");
+    });*/
+
+
 
 });
