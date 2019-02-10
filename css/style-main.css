@@ -534,12 +534,12 @@ a.gallery__img8 {
   -webkit-transform: rotateY(180deg);
 }
 
-.cards__card:hover .card__front {
+.cards__card:hover .card__front, .cards__rotate-front {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 }
 
-.cards__card:hover .card__back {
+.cards__card:hover .card__back, .cards__rotate-back {
   transform: rotateY(360deg);
   -webkit-transform: rotateY(360deg);
 }
