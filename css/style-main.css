@@ -531,14 +531,17 @@ a.gallery__img8 {
 .card__back {
   background-color: #ffffff;
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .cards__card:hover .card__front {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .cards__card:hover .card__back {
   transform: rotateY(360deg);
+  -webkit-transform: rotateY(360deg);
 }
 
 .card__figure {
